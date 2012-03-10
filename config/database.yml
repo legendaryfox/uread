@@ -45,7 +45,7 @@ test:
   database: uread_test
   pool: 5
   username: uread
-  password:
+  password: uread
 
 production:
   adapter: postgresql
