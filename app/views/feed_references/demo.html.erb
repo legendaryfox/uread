@@ -9,12 +9,14 @@
 <% if !@feed.nil? %>
 
 	<%= link_to "Subscribe to this feed", new_feed_reference_path(
-		:feed_reference => 	{ 	:title => @feed.title,
+		:feed_reference => 	{ 	
+								:title => @feed.title,
 								:url => @feed.url,
 								:etag => @feed.etag,
 								:feed_url => @feed.feed_url 
 							}
-		) %><br />
+		)
+	%><br />
 
 	Title: <%= @feed.title %> <br />
 	URL: <%= @feed.url %> <br />
