@@ -9,6 +9,7 @@ gem 'pg'
 gem 'feedzirra'
 gem 'devise'
 gem 'possessive' 
+gem 'annotate', '~> 2.4.1.beta' 
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -39,8 +40,8 @@ end
 
 group :development do
   gem 'rspec-rails', '2.6.1'
-  gem 'annotate', '2.4.0'
-  gem 'faker', '0.3.1'
+	 
+	gem 'faker', '0.3.1'
 end
 
 group :test do

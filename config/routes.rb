@@ -1,4 +1,6 @@
 Uread::Application.routes.draw do
+  get "feed_references/demo_feed"
+
   devise_for :users
 
   get "pages/home"

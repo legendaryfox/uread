@@ -1,0 +1,2 @@
+module FeedReferencesHelper
+end
