@@ -1,0 +1,7 @@
+<%= semantic_form_for @feed_reference do |feed_reference_form| %>
+	<%= render 'shared/error_messages', :object => feed_reference_form.object %>
+	<%= render 'fields', :feed_reference_form => feed_reference_form %>
+
+	<%= feed_reference_form.actions %>
+<% end %>
+

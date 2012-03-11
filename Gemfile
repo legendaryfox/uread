@@ -10,6 +10,8 @@ gem 'feedzirra'
 gem 'devise'
 gem 'possessive' 
 gem 'annotate', '~> 2.4.1.beta' 
+gem 'feedbag'
+gem 'formtastic'
 
 # Gems used only for assets and not required
 # in production environments by default.

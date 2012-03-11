@@ -4,4 +4,14 @@
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
  *= require_tree . 
+
+# app/assets/stylesheets/application.css
+  *= require formtastic
+  
+  # app/assets/stylesheets/ie6.css
+  *= require formtastic_ie6
+  
+  # app/assets/stylesheets/ie7.css
+  *= require formtastic_ie7
+
 */

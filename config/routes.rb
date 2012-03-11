@@ -1,5 +1,10 @@
 Uread::Application.routes.draw do
-  get "feed_references/demo_feed"
+  
+  resources :feed_references do
+    collection do
+      get :demo, :my
+    end
+  end
 
   devise_for :users
 

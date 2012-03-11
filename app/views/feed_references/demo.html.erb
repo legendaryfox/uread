@@ -1,0 +1,34 @@
+<h1>FeedReferences#demo_feed</h1>
+<p></p>
+<%= form_tag demo_feed_references_path, :method => :get do %>
+	URL: <%= text_field_tag :input_url, params[:input_url] %> <%= submit_tag "Search!" %>
+	<br />
+<% end %>
+
+
+<% if !@feed.nil? %>
+
+	<%= link_to "Subscribe to this feed", new_feed_reference_path(
+		:feed_reference => 	{ 	:title => @feed.title,
+								:url => @feed.url,
+								:etag => @feed.etag,
+								:feed_url => @feed.feed_url 
+							}
+		) %><br />
+
+	Title: <%= @feed.title %> <br />
+	URL: <%= @feed.url %> <br />
+	FeedURL: <%= @feed.feed_url %> <br />
+	Etag: <%= @feed.etag %> <br />
+
+	<% @entries.each do |entry| %>
+	<hr />
+	Entry Title: <%= entry.title %> <br />
+	Entry URL: <%= entry.url %><br />
+	Entry Author: <%= entry.author %><br />
+	Entry Summary: <%= entry.summary %><br />
+	Entry Content: <%= entry.content %><br />
+	Entry Cats: <%= entry.categories %><br />
+	<br />
+	<% end %>
+<% end %>

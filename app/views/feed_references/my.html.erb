@@ -1,0 +1,4 @@
+<h1>All your feed references</h1>
+<% @feed_references.each do |feed_reference| %>
+	<%= feed_reference.title %> - <%= feed_reference.feed_url %> <br />
+<% end %>
